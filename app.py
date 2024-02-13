@@ -1,9 +1,7 @@
-from flask import Flask, render_template, request, jsonify
 from chat import get_response
-from flask_cors import CORS
 
 app = Flask(__name__)
-CORS(app)
+
 
 # shut off get to use API with Cors
 @app.get("/") # Go to home page and render template
